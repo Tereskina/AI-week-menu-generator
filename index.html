@@ -7,35 +7,45 @@
     <title>AI Week Menu Generator</title>
   </head>
   <body>
-    <h1>AI Week Menu Generator</h1>
-    <main>
-      <form>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Enter the preferable ingredients for your recipies"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <div>Your menu is here</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Tereskina" target="_blank"
-        >Kseniia Tereskina</a
-      >
-      and is
-      <a
-        href="https://github.com/Tereskina/AI-week-menu-generator"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-menu-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <h1>AI Week Menu Generator</h1>
+      <main>
+        <form>
+          <input
+            type="text"
+            class="instructions"
+            name=""
+            id=""
+            placeholder="Enter preferable ingredients for your recipies"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" value="Submit" class="submit-button"/>
+        </form>
+      </main>
+      <div class="result">Your menu is here
+        <br>
+        and here
+      </div>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Tereskina" target="_blank"
+          >Kseniia Tereskina</a
+        >
+        and is
+        <a
+          href="https://github.com/Tereskina/AI-week-menu-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://ai-menu-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
