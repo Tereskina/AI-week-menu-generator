@@ -12,12 +12,12 @@ function displayMenu(response) {
 function generateMenu(event) {
   event.preventDefault();
   let menuElement = document.getElementById("menu");
-  menuElement.innerHTML = "Please Wait. You recepies is being generated... ";
+  menuElement.innerHTML = "Please Wait. You recepies are being generated... ";
   let userInstructions = document.getElementById("user-instructions");
 
   let apiKey = "af452f84910t3od515bb3246f723ee9b";
   let context =
-    "You are experienced cook. Provide answer in HTML. Start each of 2 recepies in a new paragraph, provide ingreedients and cooking instructions. Use <strong> for the title of the recipies.  Separate recepies with <hr> ";
+    "You are experienced cook. Provide answer in HTML. Start each of 2 recepies in a new paragraph, provide ingreedients and cooking instructions. Use <strong> for the title of the recipies.  Separate recepies with <hr> Make sure that all text will fit in 800 symbols";
   let prompt = `Write menu for 2 dinners with recipies using ingredients from ${userInstructions.value} `;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
@@ -27,4 +27,4 @@ function generateMenu(event) {
 
 let menuFormElement = document.getElementById("menu-form-element");
 menuFormElement.addEventListener("submit", generateMenu);
-Added
+Added;
