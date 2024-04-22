@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Week Menu Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>AI Week Menu Generator</h1>
       <main>
-        <form>
+        <form id="menu-form-element">
           <input
             type="text"
             class="instructions"
@@ -24,9 +25,7 @@
           <input type="submit" value="Submit" class="submit-button"/>
         </form>
       </main>
-      <div class="result">Your menu is here
-        <br>
-        and here
+      <div class="menu" id="menu"> You menu will be here
       </div>
 
       <footer>
