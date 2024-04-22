@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Week Menu Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>AI Week Menu Generator</h1>
+      <h1>AI Weekend Menu Generator</h1>
       <main>
         <form id="menu-form-element">
           <input
             type="text"
             class="instructions"
-            name=""
-            id=""
+            id="user-instructions"
             placeholder="Enter preferable ingredients for your recipies"
             autofocus
             required
             autocomplete="off"
           />
-          <input type="submit" value="Submit" class="submit-button"/>
+          <input type="submit" value="Submit" class="submit-button" />
         </form>
       </main>
-      <div class="menu" id="menu"> You menu will be here
-      </div>
+      <div class="menu" id="menu">You menu will be here</div>
 
       <footer>
         This AI project was coded by
