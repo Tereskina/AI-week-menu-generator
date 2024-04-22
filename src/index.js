@@ -27,4 +27,3 @@ function generateMenu(event) {
 
 let menuFormElement = document.getElementById("menu-form-element");
 menuFormElement.addEventListener("submit", generateMenu);
-Added;
