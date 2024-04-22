@@ -17,6 +17,10 @@ h1 {
 a {
   color: #3e363f;
 }
+form {
+  display: flex;
+  justify-content: space-between;
+}
 
 footer {
   margin-top: 15px;
