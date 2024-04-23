@@ -86,21 +86,6 @@ label {
   }
 }
 
-/* .generating {
-  animation: blink-animation 1s steps(5, start) infinite;
-}
-
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-} */
-
 .generating {
   animation: blinker 1s linear infinite;
 }
