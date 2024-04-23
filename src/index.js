@@ -1,7 +1,5 @@
 function displayMenu(response) {
-  console.log("menu generated");
   new Typewriter("#menu", {
-    // strings: "Please wait. Your menu is being generated...",
     strings: response.data.answer,
     autoStart: true,
     cursor: "",
@@ -11,9 +9,12 @@ function displayMenu(response) {
 
 function generateMenu(event) {
   event.preventDefault();
-  let menuElement = document.getElementById("menu");
-  menuElement.innerHTML = "Please Wait. You recepies are being generated... ";
   let userInstructions = document.getElementById("user-instructions");
+  let menuElement = document.getElementById("menu");
+
+  menuElement.classList.remove("hidden");
+  menuElement.innerHTML = `<siv><span class="generating">⏳</span>
+  Please Wait. You recepies with  ${userInstructions.value} are being generated...</div>`;
 
   let apiKey = "af452f84910t3od515bb3246f723ee9b";
   let context =
@@ -21,7 +22,7 @@ function generateMenu(event) {
   let prompt = `Write menu for 2 dinners with recipies using ingredients from ${userInstructions.value} `;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  console.log(prompt);
+
   axios.get(apiUrl).then(displayMenu);
 }
 
